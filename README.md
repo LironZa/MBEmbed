@@ -24,8 +24,27 @@ This repo indcludes:
 * LICENSE
 
 ---
+
 ## Contact
 
 For any questions, please open an [issue on this repository](https://github.com/LiZa/MBEmbed/issues) or contact Liron Zahavi at liron.zahavi at weizmann.ac.il.
+
+---
+
+## Quick Start
+```python
+import pandas as pd
+from embed_new_samples import get_sample_representations
+
+# Load your microbiome data (samples as rows, species as columns)
+data = pd.read_csv("your_data.csv", index_col=0)
+
+# Generate embeddings
+embeddings = get_sample_representations(
+    input_samples_df=data,
+    output_path="my_embeddings.csv",
+    model_path="model/mae30_encoder_full.pkl",
+    species_reference_path="model/model_species_reference.csv"
+)
 
 ---
