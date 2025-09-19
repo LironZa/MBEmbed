@@ -14,14 +14,14 @@ The gut microbiome plays a crucial role in human health, but machine learning ap
 
 ---
 
-## **CODE AND MODELS COMING SOON!**
-We are actively preparing the full code and trained model assets for public release.
-
-This repo will include:
-* Code for building the model
-* Pre-trained model weigths
-* Code for preprocessing the features
-* Code for creating sample representations
+## **Content**
+This repo indcludes:
+* embed_new_samples.py - a script to preprocess your samples, load the pretrained MAE-30% model, and generate sample representations
+* model/mae30_encoder_full.pkl - the pretrained model
+* model/model_species_reference.csv - a reference file with species names, to align the order of features (species) in your samples with what was used to train the model
+* requirements.txt
+* README.md
+* LICENSE
 
 ---
 ## Contact
